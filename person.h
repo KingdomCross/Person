@@ -8,13 +8,16 @@
 #include <string>
 
 using namespace std;
-class Person {
-    string name;
-    double salary;
+class person {
+    string name = "";
+    float salary = 0;
 public:
+    person(string iname, float isalary);
     void setPerson();
     string getName();
     float getSalary();
+    void bsort(person **, int n, bool s);
+    void order(person**, person**);
 };
 
 
